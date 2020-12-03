@@ -1,10 +1,10 @@
-file = open("sums.txt")
+file = open("Day1Input.txt")
 
 lines = file.readlines()
 
 numset = {"0"}
 
-#Part 1: find 2 nubers that sum to 2020
+#Part 1: find product of 2 numbers that sum to 2020
 for line in lines:
     numset.add(int(line))
     if ((2020 - int(line)) in numset):
@@ -14,7 +14,7 @@ for line in lines:
 
 numset.clear()
 
-#Part 2: find 3 numbers that sum to 2020
+#Part 2: find product of 3 numbers that sum to 2020
 for line in lines:
     numset.add(int(line))
     for num in numset:
