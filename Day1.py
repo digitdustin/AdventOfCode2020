@@ -12,6 +12,13 @@ for line in lines:
         product = int(line) * (2020 - int(line))
         print("product: " + str(product))
 
+numset.clear()
+
 #Part 2: find 3 numbers that sum to 2020
 for line in lines:
-    numset.ad
+    numset.add(int(line))
+    for num in numset:
+        for num2 in numset:
+            if (num + num2 + int(line) == 2020):
+                print(str(num) + " " + str(num2) + " " + line)
+                print("product: " + str(num*num2*int(line)))
