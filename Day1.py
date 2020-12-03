@@ -14,4 +14,4 @@ for line in lines:
 
 #Part 2: find 3 numbers that sum to 2020
 for line in lines:
-    numset.add
+    numset.ad
